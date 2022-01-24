@@ -1,7 +1,7 @@
 export const SearchScreen = () => {
     return (
         <div>
-            <h1>Soy Search screen</h1>
+            <h1>Movies Search screen</h1>
         </div>
     )
 }

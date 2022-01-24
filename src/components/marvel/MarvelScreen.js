@@ -4,7 +4,7 @@ import HeroList from '../hero/HeroList'
 export const MarvelScreen = () => {
     return (
         <div className="container mt-5">
-             <h1>Soy Marvel screen</h1>
+             <h1>Movies Marvel</h1>
             <HeroList publisher={'Marvel Comics'}/>
         </div>
     )

@@ -24,7 +24,7 @@ const navigate=useNavigate();
 </div></div>
     <div  className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex  justify-content-md-end"> 
     <ul>
-    <span className="ml-10 text-white">usuario</span>
+    <span className="ml-10 text-white">usuario </span>
     <button  onClick={handdleLogout}  className=" btn btn-outline-success  " to="/login">logout</button>   
     </ul>
   
