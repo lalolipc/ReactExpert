@@ -20,6 +20,7 @@ const navigate=useNavigate();
   <div className="navbar-nav">
     <NavLink exact  activeClassName="active"  className=" nav-item nav-link " to="/marvel">Marvel</NavLink>  
     <NavLink exact   activeClassName="active" className=" nav-item nav-link " to="/dc">Dc</NavLink> 
+    <NavLink exact   activeClassName="active" className=" nav-item nav-link " to="/search">Search</NavLink> 
     
 </div></div>
     <div  className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex  justify-content-md-end"> 
