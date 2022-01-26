@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from '../../auth/authContext';
+import { types } from '../../types/types';
 
 const NavBar = () => {
  
 const navigate=useNavigate();
+const {dispatch}= useContext(AuthContext)
 
     const handdleLogout=()=>{
-
+    dispatch({ type:types.logout})
         navigate('/login',{replace:true});
     };
+    const {user}= useContext(AuthContext);
     return (
         <div>
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark"> 
@@ -25,7 +29,7 @@ const navigate=useNavigate();
 </div></div>
     <div  className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex  justify-content-md-end"> 
     <ul>
-    <span className="ml-10 text-white">usuario </span>
+    <span className="ml-10 text-white">{user.name} </span>
     <button  onClick={handdleLogout}  className=" btn btn-outline-success  " to="/login">logout</button>   
     </ul>
   
